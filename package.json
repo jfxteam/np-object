@@ -1,0 +1,18 @@
+{
+  	"author": {
+		"name": "Anton Lebedev @antoinedze"
+  	},
+	"bugs": {
+		"url": "https://github.com/antoinedze/jfactory-object/issues"
+	},
+	"description": "JFactory Object class extending built-in Object class",
+	"homepage": "https://github.com/antoinedze/jfactory-object",
+	"license": "MIT",
+	"main": "index.js",
+	"name": "jfactory-object",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/antoinedze/jfactory-object.git"
+	},
+	"version": "1.0.0"
+}
