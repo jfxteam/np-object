@@ -5,7 +5,7 @@ module.exports = class extends Object {
 		return args.filter(v => v).reduce((assigned, obj, index, array) => {
 			if(index === array.length-1){
 				this.keys(obj).map(key => {
-					assigned[key] = assigned[key] || obj[key];
+					assigned[key] = typeof(assigned[key]) !== 'undefined' && assigned[key] !== null ? assigned[key] : obj[key];
 				});
 				return assigned;
 			}
