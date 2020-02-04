@@ -11,7 +11,7 @@
   "main": "index.js",
   "name": "@wf-team/object",
   "scripts": {
-    "deploy": "npm i npm-add-dependencies -g && npm i npm-check-updates -g",
+    "deploy": "npm i add-dependencies -g && npm i npm-check-updates -g",
     "fix-start": "ncu -u -n \"/^@wf-team.*$/\" && npm --no-git-tag-version version pre%fix-type% && npm publish",
     "fix": "ncu -u -n \"/^@wf-team.*$/\" && npm --no-git-tag-version version prerelease && npm publish",
     "fix-end": "ncu -u \"/^@wf-team.*$/\" && npm --no-git-tag-version version %fix-type% && npm publish"
