@@ -1,18 +1,27 @@
 {
-  	"author": {
-		"name": "Anton Lebedev @antoinedze"
-  	},
-	"bugs": {
-		"url": "https://github.com/antoinedze/jfactory-object/issues"
-	},
-	"description": "JFactory Object class extending built-in Object class",
-	"homepage": "https://github.com/antoinedze/jfactory-object",
-	"license": "MIT",
-	"main": "index.js",
-	"name": "jfactory-object",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/antoinedze/jfactory-object.git"
-	},
-	"version": "1.0.1"
+  "author": {
+    "name": "Anton Lebedev @antoinedze"
+  },
+  "bugs": {
+    "url": "https://github.com/wf-team/npm-object/issues"
+  },
+  "description": "JavaScript Object class extending built-in Object class",
+  "homepage": "https://github.com/wf-team/npm-object",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@wf-team/object",
+  "scripts": {
+    "deploy": "npm i npm-add-dependencies -g && npm i npm-check-updates -g",
+    "fix-start": "ncu -u -n \"/^@wf-team.*$/\" && npm --no-git-tag-version version pre%fix-type% && npm publish",
+    "fix": "ncu -u -n \"/^@wf-team.*$/\" && npm --no-git-tag-version version prerelease && npm publish",
+    "fix-end": "ncu -u \"/^@wf-team.*$/\" && npm --no-git-tag-version version %fix-type% && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wf-team/npm-object.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/wf-team"
+  },
+  "version": "0.0.1-0"
 }
